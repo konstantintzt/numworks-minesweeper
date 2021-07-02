@@ -69,9 +69,9 @@ def main():
 
     visited = [[0]*x_size for y in range(y_size)]
 
-    clicked = False
-
     while alive:
+
+        clicked = False
 
         if ion.keydown(ion.KEY_OK):
             click_cell(curr_x, curr_y, mine_map, neighbor_map, game_map, visited)
