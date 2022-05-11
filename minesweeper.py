@@ -126,11 +126,7 @@ def display(table):
     for l in table:
         print(*l)
 
-def is_inside_field(x, y, width, length):
-    if x < 0 or y < 0 or x >= width or y >= length:
-        return False
-    else:
-        return True
+is_inside_field = lambda x, y, width, length: ( 0 <= x < width and 0 <= y < length) 
 
 def get_mines(x, y, mine_map):
 
